@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+input,
+button,
+a {
+  font-family: "Montserrat";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header b {
+  font-weight: 600;
+}
+.header {
+  background-image: url(./img/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  min-height: 800px;
+  margin: 0 auto;
+  padding: 120px;
+  position: relative;
+  overflow: hidden;
+}
+.header__name {
+  font-size: 64px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+.header__paragraph {
+  padding-bottom: 48px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 24px;
+  border: 1px solid #202027;
+  border-radius: 60px;
+  width: 247px;
+  height: 66px;
+  color: #ffffff;
+  background-color: #202027;
+}
+.header__button:hover {
+  background-color: #ffffff;
+  color: #202027;
+  border-color: #202027;
+}
+.header__content {
+  max-width: 769px;
+}
+.header__decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  inset: 0;
+}
+.header__decor .decor-big {
+  position: absolute;
+  width: 1074px;
+  right: 0%;
+  max-width: 40%;
+  height: auto;
+}
+.header__decor .star-1 {
+  position: absolute;
+  top: 94px;
+  left: 63px;
+  width: 57px;
+  height: 57px;
+}
+.header__decor .star-2 {
+  position: absolute;
+  top: 69px;
+  left: 156px;
+  width: 35px;
+  height: 35px;
+}
+.header__decor .star-3 {
+  position: absolute;
+  top: 538px;
+  left: 948px;
+  width: 37px;
+  height: 37px;
+}
+.header__decor .star-4 {
+  position: absolute;
+  top: 568px;
+  left: 1013px;
+  width: 83px;
+  height: 83px;
+}
+
+.hero {
+  background-color: #202027;
+  max-width: 1440px;
+  min-height: 1470px;
+  min-height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.hero__name {
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 700;
+  padding-left: 119px;
+  padding-top: 94px;
+}
+.hero__paragraph {
+  padding-left: 119px;
+  padding-top: 24px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+}
+.hero__decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  inset: 0;
+}
+.hero__decor .Star-section {
+  position: absolute;
+  top: 77px;
+  left: 933px;
+  width: 584px;
+  height: 584px;
+}
+.hero__decor .Star-5 {
+  position: absolute;
+  top: 770px;
+  left: 25px;
+  width: 31px;
+  height: 31px;
+}
+.hero__decor .Star-6 {
+  position: absolute;
+  top: 822px;
+  left: 40px;
+  width: 54px;
+  height: 54px;
+}
+.hero .games {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: start;
+  padding-top: 72px;
+  padding-bottom: 50px;
+  padding-left: 119px;
+  padding-right: 120px;
+  position: relative;
+  z-index: 2;
+}
+.hero .games .game-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  text-decoration: none;
+  width: 100%;
+  max-width: 378px;
+  height: 473px;
+}
+.hero .games .game-card__img-wrapper {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+.hero .games .game-card__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.hero .games .game-card__content {
+  flex: 0 0 auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.hero .games .game-card__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  background-color: #f7f7f7;
+  color: #202027;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 52px;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero .games .game-card__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #202027;
+  line-height: 1.2;
+  margin: 0;
+}
+.hero .games .game-card .card-one {
+  flex: 0 0 auto;
+  padding: 32px;
+}
+.hero .games .game-card:nth-child(2),
+.hero .games .game-card:nth-child(5) {
+  height: 512px;
+}
+.hero .games .game-card:nth-child(4),
+.hero .games .game-card:nth-child(6) {
+  height: 551px;
+  margin-top: -39px;
+}/*# sourceMappingURL=style.css.map */
