@@ -29,7 +29,7 @@ html {
   max-width: 1440px;
   min-height: 800px;
   margin: 0 auto;
-  padding: 120px;
+  padding: 196px 120px 44px;
   position: relative;
   overflow: hidden;
 
@@ -64,6 +64,10 @@ html {
       color: #202027;
       border-color: #202027;
     }
+  }
+
+  &__button-mob {
+    display: none;
   }
 
   &__content {
@@ -119,6 +123,22 @@ html {
       width: 83px;
       height: 83px;
     }
+
+    .star-mobil-1 {
+      display: none;
+    }
+
+    .dekor-mobil {
+      display: none;
+    }
+
+    .star-mobil-2 {
+      display: none;
+    }
+  }
+
+  .pair {
+    white-space: normal;
   }
 }
 
@@ -129,6 +149,7 @@ html {
   min-height: auto;
   position: relative;
   overflow: hidden;
+  display: block;
 
   &__name {
     color: #ffffff;
@@ -264,3 +285,8 @@ html {
   }
 }
 
+.hero-mobile {
+  display: none;
+}
+
+@import "mobile";
