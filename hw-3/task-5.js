@@ -25,4 +25,5 @@ if (monthNumber > 13) {
             console.log("Осень");
             break;
     }
+    
 }
